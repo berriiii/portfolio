@@ -55,6 +55,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%);
+}
+
+#toggle-sidebar {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background-color: #28207b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 1000;
 }
 
 .sidebar nav ul {
@@ -70,7 +87,7 @@
   color: white;
   text-decoration: none;
   font-size: 1.3em;
-  
+  transition: color 0.3s ease;
 }
 
 .sidebar nav ul li a i {
