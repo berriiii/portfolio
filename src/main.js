@@ -22,3 +22,8 @@ document.querySelector('#app').innerHTML = `
 `
 
 setupCounter(document.querySelector('#counter'))
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.getElementById('toggle-sidebar').addEventListener('click', function() {
+    document.querySelector('.sidebar').classList.toggle('hidden');
+  });
+});
